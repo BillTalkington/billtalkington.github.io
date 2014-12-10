@@ -2,7 +2,7 @@
 title: Bill Talkington
 # email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  This site contains my thoughts while learning about web development
+  This site contains my thoughts and projects while learning about web development
   and other interesting things that I'm into.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://billtalkington.github.io" # the base hostname & protocol for your site

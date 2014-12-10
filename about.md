@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm Bill. I'm currently a neuroscientist trying to transition into web development as a career. This site will chronicle my progress in achieving that goal as well as be a place to discuss my hobbies and interests.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Feel free to follow me on [Twitter][twitter].
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+[twitter]: 	http://twitter.com/billtalkington
