@@ -1,13 +1,11 @@
 # Site settings
 title: Bill Talkington
 # email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  This site contains my thoughts and projects while learning about web development
-  and other interesting things that I'm into.
-baseurl: "" # the subpath of your site, e.g. /blog/
+description: The personal site of Bill Talkington. My thoughts and projects as I explore web development and the rest of the world.
 url: "http://billtalkington.github.io" # the base hostname & protocol for your site
 twitter_username: BillTalkington
 github_username:  BillTalkington
 
 # Build settings
 markdown: kramdown
+
