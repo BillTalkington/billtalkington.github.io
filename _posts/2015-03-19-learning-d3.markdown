@@ -38,8 +38,8 @@ var color = d3.scale.quantize()
     .domain([0.005, 0.05]);
 
 queue()
-  .defer(d3.json, "/WVcounty.geojson")
-  .defer(d3.csv, "/Moran12.csv", 
+  .defer(d3.json, "/assets/d3/WVcounty.geojson")
+  .defer(d3.csv, "/assets/d3/Moran12.csv", 
           function(d) { 
             percByCounty.set(d.CountyName, +d.Percentage); 
           }
