@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to my site!"
 date:   2014-12-09 20:02:51
-categories: jekyll
+categories: jekyll web
 ---
 
 Welcome to my site! 

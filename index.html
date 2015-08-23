@@ -1,26 +1,15 @@
 ---
 layout: default
+Title: Bill Talkington
 ---
 
-<div class="home">
+<p><strong>NOTE:</strong> I'm currently making a lot of changes to my site's appearance, so don't be a stranger! </p>
 
-  <h1 class="page-heading">Posts</h1>
+<p>Hi! I'm Bill, a former <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=talkington+wj">neuroscientist</a> transitioning into web/software development as a career. I earned my PhD at <a href="http://www.wvu.edu">WVU</a>, where I studied auditory signal processing in the human brain with various neuroimaging technologies.</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<p>This site will be an outlet for discussing any of my coding projects as well as my hobbies and interests, which may include gardening, permaculture, furniture restoration, woodworking, home improvement, etc.</p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+<p>When I'm not coding, learning about coding, or finding any spare minutes for those hobbies, I'm usually enjoying time with my wife <a href="http://www.BrandiTalkington.com"> Brandi </a> and our two little girls.</p>
 
-        {{ post.excerpt }}
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>

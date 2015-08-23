@@ -2,7 +2,9 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a class="site-title" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/img/face-name-logo-H100px.png" alt="Bill Talkington">
+    </a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -13,8 +15,11 @@
         </svg>
       </a>
 
+
+      {% assign sorted = site.pages | sort:"order" %}
+
       <div class="trigger">
-        {% for page in site.pages %}
+        {% for page in sorted %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}

@@ -1,0 +1,23 @@
+---
+layout: page
+title: Web
+permalink: /web/
+order: 2
+---
+
+<p>These posts cover any web-related projects or technologies that I have been working on. I <em>should</em> post the relevant code on <a href="https://github.com/{{ site.github_username }}"}>Github</a>; bug me on <a href="https://github.com/{{ site.twitter_username }}">Twitter</a> if I don't.</p>
+
+<ul class="post-list">
+  {% for post in site.categories.web %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+
+      {{ post.excerpt }}
+
+    </li>
+  {% endfor %}
+</ul>

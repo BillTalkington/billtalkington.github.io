@@ -1,0 +1,23 @@
+---
+layout: page
+title: Make
+permalink: /make/
+order: 3
+---
+
+<p>These posts cover any of my home-improvement and other DIY projects. Coming soon!</p>
+
+<ul class="post-list">
+  {% for post in site.categories.make %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+
+      {{ post.excerpt }}
+
+    </li>
+  {% endfor %}
+</ul>
