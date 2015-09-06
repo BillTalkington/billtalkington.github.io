@@ -11,5 +11,15 @@ Title: Bill Talkington
 
 <p>When I'm not coding, learning about coding, or finding any spare minutes for those hobbies, I'm usually enjoying time with my wife <a href="http://www.BrandiTalkington.com"> Brandi </a> and our two little girls.</p>
 
+{% assign sorted = site.pages | sort:"order" %}
+
+<div class="site-circles">
+  {% for page in sorted %}
+    {% if page.title %}
+    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
+
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
