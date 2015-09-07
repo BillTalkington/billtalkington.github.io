@@ -30,7 +30,7 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
+ul, ol, dl, figure, figcaption,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
@@ -50,12 +50,23 @@ img {
 /**
  * Figures
  */
+
+figure {
+    display: block;
+    margin: 0 auto;
+}
+
 figure > img {
     display: block;
+    margin: 0 auto 5px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px 1px $grey-color;
 }
 
 figcaption {
     font-size: $small-font-size;
+    display: block;
+    text-align: center;
 }
 
 

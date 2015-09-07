@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "New logo"
+date:   2015-09-06
+categories: web
+---
+
+Recently, I decided to test my design skills by creating a new logo for my site. I like the avatar/name combos that I have seen on numerous personal sites, so that's direction I took.
+
+<figure>
+  <img src="{{ site.baseurl }}/assets/img/face-name-logo-H100px.png" alt="Bill Talkington Logo">
+  <figcaption>It's my logo, it's my face!</figcaption>
+</figure>
+
+
+The face portion of the logo is simply a vector tracing of the photo of myself that I use for most of my social media accounts. I also mixed a couple of fonts for my name. All together, I like it a lot and whenever my two-year old daughter sees it, she points and exclaims "Da-da!". Win-win.
+
