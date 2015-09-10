@@ -94,7 +94,7 @@
     @include outer-container();
 }
 
-.topic-circle {
+.topic-block {
     @include span-columns(3 of 12);
     height: 125px;
     text-align: center;
@@ -105,43 +105,40 @@
     }
 }
 
-@mixin topic-circle-link($url) {
+@mixin topic-circle($url) {
     display: inline-block;
     width: 125px;
     height: 125px;
     border-radius: 63px;
     line-height: 125px;
-    background: url($url) no-repeat;    
+    background: url($url) no-repeat;
+    @include filter(grayscale(100%) opacity(0.6));
+    h2 {
+        font-size: 2em;
+        font-weight: 600;
+        color: white;
+    }
+
+    &:hover {
+        @include filter(grayscale(0%) opacity(1));
+        h2 {
+            display: none;
+        }
+    }    
 }
 
-.topic-circle-link-about { 
-    @include topic-circle-link("/assets/img/bill-125px.png");
+.topic-circle-about { 
+    @include topic-circle("/assets/img/bill-125px.png");
 }
-.topic-circle-link-web { 
-    @include topic-circle-link("/assets/img/code-crop-125px.png");
+.topic-circle-web { 
+    @include topic-circle("/assets/img/code-crop-125px.png");
 }
-.topic-circle-link-make { 
-    @include topic-circle-link("/assets/img/hoosier-door-crop-125px.png");
+.topic-circle-make { 
+    @include topic-circle("/assets/img/hoosier-door-crop-125px.png");
 }
-.topic-circle-link-grow { 
-    @include topic-circle-link("/assets/img/pea-crop-125px.png");
+.topic-circle-grow { 
+    @include topic-circle("/assets/img/pea-crop-125px.png");
 }
-
-// .topic-link {
-//     @include topic-circle-link("/assets/img/face-name-logo-H100px.png");
-//     // display: inline-block;
-//     // width: 100px;
-//     // height: 100px;
-//     // border-radius: 50px;
-//     // line-height: 100px;
-//     // background: url("/assets/img/face-name-logo-H100px.png") no-repeat;
-
-// }
-
-
-
-        
-
 
 
 
