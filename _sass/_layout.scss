@@ -87,6 +87,62 @@
     }
 }
 
+/*****************************
+// Topic circles on index.html
+*****************************/
+.topic-circles {
+    @include outer-container();
+}
+
+.topic-circle {
+    @include span-columns(3 of 12);
+    height: 125px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 600px){
+        @include span-columns(12 of 12);
+    }
+}
+
+@mixin topic-circle-link($url) {
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    border-radius: 63px;
+    line-height: 125px;
+    background: url($url) no-repeat;    
+}
+
+.topic-circle-link-about { 
+    @include topic-circle-link("/assets/img/bill-125px.png");
+}
+.topic-circle-link-web { 
+    @include topic-circle-link("/assets/img/code-crop-125px.png");
+}
+.topic-circle-link-make { 
+    @include topic-circle-link("/assets/img/hoosier-door-crop-125px.png");
+}
+.topic-circle-link-grow { 
+    @include topic-circle-link("/assets/img/pea-crop-125px.png");
+}
+
+// .topic-link {
+//     @include topic-circle-link("/assets/img/face-name-logo-H100px.png");
+//     // display: inline-block;
+//     // width: 100px;
+//     // height: 100px;
+//     // border-radius: 50px;
+//     // line-height: 100px;
+//     // background: url("/assets/img/face-name-logo-H100px.png") no-repeat;
+
+// }
+
+
+
+        
+
+
 
 
 /**

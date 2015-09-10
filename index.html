@@ -13,13 +13,37 @@ Title: Bill Talkington
 
 {% assign sorted = site.pages | sort:"order" %}
 
-<div class="site-circles">
+<!-- <section class="topic-circles">
   {% for page in sorted %}
     {% if page.title %}
-    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+    	<div class="topic-circle">
+				<div class="test">
+				<p>{{ page.title }}</p>
+    		</div>
+    	</div>
+    </a>
+    
     {% endif %}
   {% endfor %}
-</div>
+</section> -->
+
+<section class="topic-circles">
+  {% for page in sorted %}
+    {% if page.title %}
+    <div class="topic-circle">
+      <!-- <a class="topic-link" href="{{ page.url | prepend: site.baseurl }}">
+        <p>{{ page.title }}</p>
+      </a> -->
+      <a class="topic-circle-link-{{ page.url | replace: '/', ''}}" href="{{ page.url | prepend: site.baseurl }}">
+        <p>{{ page.title }}</p>
+      </a>
+    </div>
+    {% endif %}
+  {% endfor %}
+</section>
+
+
 
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
