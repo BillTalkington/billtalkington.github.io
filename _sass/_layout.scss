@@ -95,13 +95,14 @@
 }
 
 .topic-block {
-    @include span-columns(3 of 12);
+    @include span-columns(3);
     height: 125px;
     text-align: center;
     margin-bottom: 20px;
 
     @media screen and (max-width: 600px){
-        @include span-columns(12 of 12);
+        @include span-columns(6);
+        @include omega(2n);
     }
 }
 
